@@ -30,6 +30,26 @@
         android:text="0"
         android:textSize="@dimen/normal_text" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif"
+        android:text="Цена"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/normal_text" />
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/black"
+        android:text="50"
+        android:textSize="@dimen/normal_text" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
