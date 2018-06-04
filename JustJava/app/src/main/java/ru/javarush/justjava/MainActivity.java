@@ -30,8 +30,9 @@ public class MainActivity extends AppCompatActivity {
      * Этот метод вызывается при нажатии кнопки.
      */
     public void submitOrder(View view) {
-        display(2);
-        displayPrice(2 * 5);
+        int numberOfCoffees = 3;
+        display(numberOfCoffees);
+        displayPrice(numberOfCoffees * 5);
     }
 
     /**
