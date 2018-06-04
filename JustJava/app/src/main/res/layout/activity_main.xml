@@ -11,7 +11,6 @@
     tools:context="ru.javarush.justjava.MainActivity">
 
     <TextView
-        android:id="@+id/quantity_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -22,7 +21,7 @@
         android:textSize="@dimen/normal_text" />
 
     <TextView
-        android:id="@+id/quantity"
+        android:id="@+id/quantity_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -32,12 +31,12 @@
         android:textSize="@dimen/normal_text" />
 
     <Button
-        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:fontFamily="sans-serif"
         android:textColor="@android:color/black"
         android:text="Заказать"
-        android:textSize="@dimen/normal_text" />
+        android:textSize="@dimen/normal_text"
+        android:onClick="submitOrder"/>
 </LinearLayout>
