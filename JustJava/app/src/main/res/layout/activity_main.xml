@@ -20,33 +20,44 @@
         android:textColor="@android:color/black"
         android:textSize="@dimen/normal_text" />
 
-    <Button
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:fontFamily="sans-serif"
-        android:textColor="@android:color/black"
-        android:text="+"
-        android:textSize="@dimen/normal_text"
-        android:onClick="increment"/>
-    <TextView
-        android:id="@+id/quantity_text_view"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:fontFamily="sans-serif"
-        android:textColor="@android:color/black"
-        android:text="2"
-        android:textSize="@dimen/normal_text" />
-    <Button
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginBottom="@dimen/activity_vertical_margin"
-        android:fontFamily="sans-serif"
-        android:textColor="@android:color/black"
-        android:text="-"
-        android:textSize="@dimen/normal_text"
-        android:onClick="decrement"/>
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:fontFamily="sans-serif"
+            android:onClick="decrement"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_text" />
+
+        <TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:fontFamily="sans-serif"
+            android:text="2"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_text" />
+
+        <Button
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:fontFamily="sans-serif"
+            android:onClick="increment"
+            android:text="+"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/normal_text" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
