@@ -36,6 +36,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Этот метод вызывается при нажатии кнопки.
+     */
+    public void increment(View view) {
+        int quantity = 3;
+        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
+        quantityTextView.setText("" + quantity);
+    }
+
+    public void decrement(View view) {
+        int quantity = 1;
+        TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
+        quantityTextView.setText("" + quantity);
+    }
+
+    /**
      * Этот метод отображает выбранное количество на экран.
      */
     private void display(int number) {
