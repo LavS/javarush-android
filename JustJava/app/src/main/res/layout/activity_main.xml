@@ -75,8 +75,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:fontFamily="sans-serif"
+        android:text='Нажмите "Заказать"'
         android:textColor="@android:color/black"
-        android:text="50"
         android:textSize="@dimen/normal_text" />
 
     <Button

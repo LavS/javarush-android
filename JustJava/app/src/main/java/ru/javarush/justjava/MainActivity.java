@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
      * Этот метод вызывается при нажатии кнопки.
      */
     public void submitOrder(View view) {
-        String priceMessage = "Free";
-        displayMessage(priceMessage);
+        String messagePrice = "Всего: " + NumberFormat.getCurrencyInstance().format(quantity * 5);
+        displayMessage(messagePrice + "\nСпасибо!");
     }
 
     /**
