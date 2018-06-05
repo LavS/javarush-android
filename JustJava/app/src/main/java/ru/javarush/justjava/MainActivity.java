@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
      * Этот метод вызывается при нажатии кнопки.
      */
     public void submitOrder(View view) {
-        displayPrice(quantity * 5);
+        String priceMessage = "Free";
+        displayMessage(priceMessage);
     }
 
     /**
@@ -62,5 +63,13 @@ public class MainActivity extends AppCompatActivity {
     private void displayPrice(int number) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
         priceTextView.setText(NumberFormat.getCurrencyInstance().format(number));
+    }
+
+    /**
+     * Этот метод отображает переданное сообщение на экране.
+     */
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(message);
     }
 }
