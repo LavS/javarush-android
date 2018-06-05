@@ -24,15 +24,17 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
-    public void add1(View view){
-        displayForTeamA(1);
+    public void addOneToTeamA(View view){
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
 
-    public void add2(View view){
-        displayForTeamA(2);
+    public void addTwoToTeamA(View view){
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
     }
 
-    public void add3(View view){
+    public void addThreeToTeamA(View view){
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
