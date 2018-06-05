@@ -9,30 +9,34 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="4dp"
-        android:text="1я команда" />
+        android:text="Команда А" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="4dp"
-        android:text="0" />
+        android:text="0"
+        android:id="@+id/team_a_score"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="+3 Очка" />
+        android:text="+3 Очка"
+        android:onClick="add3"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="+2 Очка" />
+        android:text="+2 Очка"
+        android:onClick="add2"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Свободный бросок" />
+        android:text="Свободный бросок"
+        android:onClick="add1"/>
 </LinearLayout>
