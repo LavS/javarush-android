@@ -10,6 +10,7 @@ package ru.javarush.justjava;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -72,9 +73,24 @@ public class MainActivity extends AppCompatActivity {
      * Этот метод вызывается при нажатии кнопки.
      */
     public void submitOrder(View view) {
-        String messagePrice = "Всего: " + NumberFormat.getCurrencyInstance().format(quantity * 5);
-        displayMessage(messagePrice + "\nСпасибо!");
+        int price = calculatePrice();
+        Log.v("MainActivity", "Цена: " + price);
+        String priceMessage = createOrderSummary(price);
+        displayMessage(priceMessage);
     }
+
+    private String createOrderSummary(int price) {
+        String text = "Имя: Лила Лабиринт\n";
+        text += "Количество: " + quantity + "\n";
+        text += "Всего: " + NumberFormat.getCurrencyInstance().format(quantity * 5) +"\n";
+        text += "Спасибо!";
+        return text;
+    }
+
+    private int calculatePrice() {
+        return quantity * 5;
+    }
+
 
     /**
      * Этот метод отображает переданное сообщение на экране.
