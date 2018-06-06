@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     int quantity = 2;
     String name = "Anonymous";
-    boolean isCream = false;
-    boolean isChocolate = false;
+    boolean isCream;
+    boolean isChocolate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,33 +70,34 @@ public class MainActivity extends AppCompatActivity {
      * Этот метод вызывается при нажатии кнопки.
      */
     public void submitOrder(View view) {
-        int price = calculatePrice();
-        Log.v("MainActivity", "Цена: " + price);
-        String priceMessage = createOrderSummary(price);
-        displayMessage(priceMessage);
-    }
-
-    private String createOrderSummary(int price) {
-        EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
-        name = nameEditText.getText().toString();
         CheckBox creamCheckBox = (CheckBox) findViewById(R.id.cream_check_box);
         isCream = creamCheckBox.isChecked();
         CheckBox creamChocolate = (CheckBox) findViewById(R.id.chocolate_check_box);
         isChocolate = creamChocolate.isChecked();
 
+        int price = calculatePrice();
+        String priceMessage = createOrderSummary(price);
+        displayMessage(priceMessage);
+    }
+
+    private int calculatePrice() {
+        int priceOfCoffee = 5;
+        if (isCream) {priceOfCoffee += 1;}
+        if (isChocolate) {priceOfCoffee += 2;}
+        return quantity * priceOfCoffee;
+    }
+
+    private String createOrderSummary(int price) {
+        EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
+        name = nameEditText.getText().toString();
         String text = "Имя: " + name + "\n";
         text += "Добавить взбитые сливки?: " + isCream + "\n";
         text += "Добавить шоколад?: " + isChocolate + "\n";
         text += "Количество: " + quantity + "\n";
-        text += "Всего: " + NumberFormat.getCurrencyInstance().format(quantity * 5) +"\n";
+        text += "Всего: " + NumberFormat.getCurrencyInstance().format(price) +"\n";
         text += "Спасибо!";
         return text;
     }
-
-    private int calculatePrice() {
-        return quantity * 5;
-    }
-
 
     /**
      * Этот метод отображает переданное сообщение на экране.
