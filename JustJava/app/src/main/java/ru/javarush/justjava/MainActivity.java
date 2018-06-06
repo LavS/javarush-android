@@ -1,5 +1,7 @@
 package ru.javarush.justjava;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -30,19 +32,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt("quantity", quantity);
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_text_view);
-        outState.putString("order_text", orderSummaryTextView.getText().toString());
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-
         quantity = savedInstanceState.getInt("quantity", 0);
-        String orderMessage = savedInstanceState.getString("order_text", "0");
-
         displayQuantity(quantity);
-        displayMessage(orderMessage);
     }
 
     /**
@@ -87,7 +83,14 @@ public class MainActivity extends AppCompatActivity {
 
         int price = calculatePrice();
         String priceMessage = createOrderSummary(price);
-        displayMessage(priceMessage);
+
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Заказ Just Java");
+        intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
     }
 
     private int calculatePrice() {
@@ -105,19 +108,11 @@ public class MainActivity extends AppCompatActivity {
         EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
         name = nameEditText.getText().toString();
         String text = "Имя: " + name + "\n";
-        text += "Добавить взбитые сливки?: " + isCream + "\n";
-        text += "Добавить шоколад?: " + isChocolate + "\n";
+        if (isCream) {text += "Добавить взбитые сливки.\n";}
+        if (isChocolate) {text += "Добавить шоколад.\n";}
         text += "Количество: " + quantity + "\n";
         text += "Всего: " + NumberFormat.getCurrencyInstance().format(price) + "\n";
         text += "Спасибо!";
         return text;
-    }
-
-    /**
-     * Этот метод отображает переданное сообщение на экране.
-     */
-    private void displayMessage(String message) {
-        TextView orderSummaryTextView = (TextView) findViewById(R.id.order_text_view);
-        orderSummaryTextView.setText(message);
     }
 }
