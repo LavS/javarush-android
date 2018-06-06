@@ -2,11 +2,11 @@ package ru.javarush.justjava;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -49,12 +49,22 @@ public class MainActivity extends AppCompatActivity {
      * Этот метод вызывается при нажатии кнопки.
      */
     public void increment(View view) {
-        quantity = quantity + 1;
+        if (quantity >= 100) {
+            quantity = 100;
+            Toast.makeText(this,"Нельзя заказать больше 100 чашек", Toast.LENGTH_SHORT).show();
+        } else {
+            quantity = quantity + 1;
+        }
         displayQuantity(quantity);
     }
 
     public void decrement(View view) {
-        quantity = quantity - 1;
+        if (quantity <= 1) {
+            quantity = 1;
+            Toast.makeText(this,"Нельзя заказать меньше 1 чашки", Toast.LENGTH_SHORT).show();
+        } else {
+            quantity = quantity - 1;
+        }
         displayQuantity(quantity);
     }
 
@@ -82,8 +92,12 @@ public class MainActivity extends AppCompatActivity {
 
     private int calculatePrice() {
         int priceOfCoffee = 5;
-        if (isCream) {priceOfCoffee += 1;}
-        if (isChocolate) {priceOfCoffee += 2;}
+        if (isCream) {
+            priceOfCoffee += 1;
+        }
+        if (isChocolate) {
+            priceOfCoffee += 2;
+        }
         return quantity * priceOfCoffee;
     }
 
@@ -94,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         text += "Добавить взбитые сливки?: " + isCream + "\n";
         text += "Добавить шоколад?: " + isChocolate + "\n";
         text += "Количество: " + quantity + "\n";
-        text += "Всего: " + NumberFormat.getCurrencyInstance().format(price) +"\n";
+        text += "Всего: " + NumberFormat.getCurrencyInstance().format(price) + "\n";
         text += "Спасибо!";
         return text;
     }
