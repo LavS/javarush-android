@@ -1,0 +1,7 @@
+/app/app.iml
+/CourtCounter.iml
+/.idea/
+*.ser
+/.gradle/
+/local.properties
+/app/build/
