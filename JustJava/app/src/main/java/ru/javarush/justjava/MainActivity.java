@@ -1,17 +1,11 @@
-/**
- * IMPORTANT: Make sure you are using the correct package name. 
- * This example uses the package name:
- * package com.example.android.justjava
- * If you get an error when copying this code into Android studio, update it to match teh package name found
- * in the project's AndroidManifest.xml file.
- **/
-
 package ru.javarush.justjava;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -22,6 +16,9 @@ import java.text.NumberFormat;
 public class MainActivity extends AppCompatActivity {
 
     int quantity = 2;
+    String name = "Anonymous";
+    boolean isCream = false;
+    boolean isChocolate = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,7 +77,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String createOrderSummary(int price) {
-        String text = "Имя: Лила Лабиринт\n";
+        EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
+        name = nameEditText.getText().toString();
+        CheckBox creamCheckBox = (CheckBox) findViewById(R.id.cream_check_box);
+        isCream = creamCheckBox.isChecked();
+        CheckBox creamChocolate = (CheckBox) findViewById(R.id.chocolate_check_box);
+        isChocolate = creamChocolate.isChecked();
+
+        String text = "Имя: " + name + "\n";
+        text += "Добавить взбитые сливки?: " + isCream + "\n";
+        text += "Добавить шоколад?: " + isChocolate + "\n";
         text += "Количество: " + quantity + "\n";
         text += "Всего: " + NumberFormat.getCurrencyInstance().format(quantity * 5) +"\n";
         text += "Спасибо!";
