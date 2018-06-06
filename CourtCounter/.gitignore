@@ -1,7 +1,12 @@
-/app/app.iml
-/CourtCounter.iml
-/.idea/
-*.ser
-/.gradle/
+*.iml
+.gradle
 /local.properties
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+*.ser
+*.jar
 /app/build/
+
