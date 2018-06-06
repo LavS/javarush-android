@@ -13,6 +13,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Топпинги"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/normal_text" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Взбитые сливки"
+        android:padding="24dp"
+        android:textSize="@dimen/normal_text"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:fontFamily="sans-serif"
         android:text="Количество"
