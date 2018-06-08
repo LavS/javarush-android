@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:1-21:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\2659ae64c35b9bf81e09bd868fad8cd9\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\232f419d178672be8f86e8fa9dfbbd44\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\677ed9b681d4f1d27930c35bb56e282e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\603f61260d976878cfc99f7e1ebea969\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b9fa2f0229b17ad4c2447fabc7a489ed\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\615b10869842bba8d4e5c6bc5749d89a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\5add5a6ae4640d350c704da948a53cb7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\43a7d944124e69f1074d7b7f114481e1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\25341ab98188e9d48eb9f82f7fbfb0b7\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d58afe114651b921786a38c42eae2739\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\499c8fde35be9838ed00b7a15dc6c81c\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c0f03f416dfb508ef4311de399a1c678\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:1-21:12
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:1-21:12
+	package
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:1-21:12
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:5:5-19:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\232f419d178672be8f86e8fa9dfbbd44\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\232f419d178672be8f86e8fa9dfbbd44\AndroidManifest.xml:9:5-20
+	android:supportsRtl
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:11:9-40
+activity#ru.javarush.cookies.MainActivity
+ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:16:17-77
+	android:name
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml:16:27-74
+uses-sdk
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\2659ae64c35b9bf81e09bd868fad8cd9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\2659ae64c35b9bf81e09bd868fad8cd9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\232f419d178672be8f86e8fa9dfbbd44\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\232f419d178672be8f86e8fa9dfbbd44\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\677ed9b681d4f1d27930c35bb56e282e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\677ed9b681d4f1d27930c35bb56e282e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\603f61260d976878cfc99f7e1ebea969\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\603f61260d976878cfc99f7e1ebea969\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b9fa2f0229b17ad4c2447fabc7a489ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\b9fa2f0229b17ad4c2447fabc7a489ed\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\615b10869842bba8d4e5c6bc5749d89a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\615b10869842bba8d4e5c6bc5749d89a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\5add5a6ae4640d350c704da948a53cb7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\5add5a6ae4640d350c704da948a53cb7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\43a7d944124e69f1074d7b7f114481e1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\43a7d944124e69f1074d7b7f114481e1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\25341ab98188e9d48eb9f82f7fbfb0b7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\25341ab98188e9d48eb9f82f7fbfb0b7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d58afe114651b921786a38c42eae2739\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\d58afe114651b921786a38c42eae2739\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\499c8fde35be9838ed00b7a15dc6c81c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\499c8fde35be9838ed00b7a15dc6c81c\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c0f03f416dfb508ef4311de399a1c678\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\lavro\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\c0f03f416dfb508ef4311de399a1c678\AndroidManifest.xml:20:5-44
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+		ADDED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Projects\JavaRush\Android\Cookies\app\src\main\AndroidManifest.xml
