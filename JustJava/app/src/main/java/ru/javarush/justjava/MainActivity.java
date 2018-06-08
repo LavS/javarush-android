@@ -1,5 +1,6 @@
 package ru.javarush.justjava;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -18,7 +19,6 @@ import java.text.NumberFormat;
 public class MainActivity extends AppCompatActivity {
 
     int quantity = 2;
-    String name = "Anonymous";
     boolean isCream;
     boolean isChocolate;
 
@@ -75,18 +75,21 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Этот метод вызывается при нажатии кнопки.
      */
+    @SuppressLint("StringFormatInvalid")
     public void submitOrder(View view) {
         CheckBox creamCheckBox = (CheckBox) findViewById(R.id.cream_check_box);
         isCream = creamCheckBox.isChecked();
         CheckBox creamChocolate = (CheckBox) findViewById(R.id.chocolate_check_box);
         isChocolate = creamChocolate.isChecked();
+        EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
+        String name = String.format("%s", nameEditText.getText().toString());
 
         int price = calculatePrice();
         String priceMessage = createOrderSummary(price);
 
         Intent intent = new Intent(Intent.ACTION_SENDTO);
         intent.setData(Uri.parse("mailto:"));
-        intent.putExtra(Intent.EXTRA_SUBJECT, "Заказ Just Java");
+        intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.order_summary_email_subject, name));
         intent.putExtra(Intent.EXTRA_TEXT, priceMessage);
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
@@ -104,15 +107,16 @@ public class MainActivity extends AppCompatActivity {
         return quantity * priceOfCoffee;
     }
 
+    @SuppressLint("StringFormatInvalid")
     private String createOrderSummary(int price) {
         EditText nameEditText = (EditText) findViewById(R.id.name_edit_text);
-        name = nameEditText.getText().toString();
-        String text = "Имя: " + name + "\n";
-        if (isCream) {text += "Добавить взбитые сливки.\n";}
-        if (isChocolate) {text += "Добавить шоколад.\n";}
-        text += "Количество: " + quantity + "\n";
-        text += "Всего: " + NumberFormat.getCurrencyInstance().format(price) + "\n";
-        text += "Спасибо!";
+        String name = String.format("%s", nameEditText.getText().toString());
+        String text = getString(R.string.order_summary_name, name) + "\n";
+        if (isCream) {text += getString(R.string.order_summary_whipped_cream) + "\n";}
+        if (isChocolate) {text += getString(R.string.order_summary_chocolate) + "\n";}
+        text += getString(R.string.order_summary_quantity, quantity) + "\n";
+        text += getString(R.string.order_summary_price, String.format("%s", NumberFormat.getCurrencyInstance().format(price))) + "\n";
+        text += getString(R.string.thank_you);
         return text;
     }
 }
